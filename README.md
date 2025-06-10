@@ -43,6 +43,7 @@ use {
 ### Method 1: Lua setup (recommended)
 
 ```lua
+-- Automatically loads the plugin
 require('frost').setup()
 ```
 
@@ -56,7 +57,7 @@ vim.cmd('colorscheme frost')
 
 ```lua
 require('frost').setup({
-  -- Add any future customization options here
+  -- Future stuff
 })
 ```
 
