@@ -1,2 +1,1 @@
-local frost = require("frost")
-frost.setup()
+require("frost").setup()
