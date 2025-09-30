@@ -83,13 +83,54 @@ function M.get_plugin_highlights(colors)
 		IndentBlanklineSpaceCharBlankline = { fg = colors.bg_highlight },
 		IndentBlanklineContextStart = { sp = colors.accent_blue, underline = true },
 
-		-- Completion menu
+		-- Completion menu (nvim-cmp)
 		CmpItemAbbr = { fg = colors.fg },
 		CmpItemAbbrDeprecated = { fg = colors.fg_dim, strikethrough = true },
 		CmpItemAbbrMatch = { fg = colors.gray_light, bold = true },
 		CmpItemAbbrMatchFuzzy = { fg = colors.gray_light, bold = true },
 		CmpItemKind = { fg = colors.gray_mid },
 		CmpItemMenu = { fg = colors.fg_dim },
+
+		-- Blink.cmp completion
+		BlinkCmpMenu = { fg = colors.fg, bg = colors.bg_alt },
+		BlinkCmpMenuBorder = { fg = colors.border, bg = colors.bg_alt },
+		BlinkCmpMenuSelection = { fg = colors.bg, bg = colors.gray_light },
+		BlinkCmpLabel = { fg = colors.fg },
+		BlinkCmpLabelDeprecated = { fg = colors.fg_dim, strikethrough = true },
+		BlinkCmpLabelMatch = { fg = colors.gray_light, bold = true },
+		BlinkCmpKind = { fg = colors.gray_mid },
+		BlinkCmpSource = { fg = colors.fg_dim },
+		BlinkCmpGhostText = { fg = colors.fg_subtle, italic = true },
+
+		-- Lualine
+		lualine_a_normal = { fg = colors.bg, bg = colors.gray_light, bold = true },
+		lualine_a_insert = { fg = colors.bg, bg = colors.accent_green, bold = true },
+		lualine_a_visual = { fg = colors.bg, bg = colors.accent_purple, bold = true },
+		lualine_a_replace = { fg = colors.bg, bg = colors.error, bold = true },
+		lualine_a_command = { fg = colors.bg, bg = colors.accent_orange, bold = true },
+		lualine_a_terminal = { fg = colors.bg, bg = colors.accent_cyan, bold = true },
+		lualine_a_inactive = { fg = colors.fg_dim, bg = colors.bg_subtle },
+
+		lualine_b_normal = { fg = colors.fg, bg = colors.bg_subtle },
+		lualine_b_insert = { fg = colors.fg, bg = colors.bg_subtle },
+		lualine_b_visual = { fg = colors.fg, bg = colors.bg_subtle },
+		lualine_b_replace = { fg = colors.fg, bg = colors.bg_subtle },
+		lualine_b_command = { fg = colors.fg, bg = colors.bg_subtle },
+		lualine_b_terminal = { fg = colors.fg, bg = colors.bg_subtle },
+		lualine_b_inactive = { fg = colors.fg_dim, bg = colors.bg_alt },
+
+		lualine_c_normal = { fg = colors.fg_dim, bg = colors.bg },
+		lualine_c_insert = { fg = colors.fg_dim, bg = colors.bg },
+		lualine_c_visual = { fg = colors.fg_dim, bg = colors.bg },
+		lualine_c_replace = { fg = colors.fg_dim, bg = colors.bg },
+		lualine_c_command = { fg = colors.fg_dim, bg = colors.bg },
+		lualine_c_terminal = { fg = colors.fg_dim, bg = colors.bg },
+		lualine_c_inactive = { fg = colors.fg_subtle, bg = colors.bg },
+
+		-- Fidget.nvim (LSP progress notifications)
+		FidgetTitle = { fg = colors.accent_blue, bold = true },
+		FidgetTask = { fg = colors.fg_dim },
+		FidgetIcon = { fg = colors.accent_cyan },
 	}
 end
 

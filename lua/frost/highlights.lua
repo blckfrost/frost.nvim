@@ -93,6 +93,9 @@ function M.get_highlights(colors)
 		-- Folding
 		Folded = { fg = colors.fg_dim, bg = colors.bg_highlight },
 		FoldColumn = { fg = colors.fg_dim, bg = colors.bg },
+
+		-- Winbar
+		WinBar = { fg = colors.fg, bg = "NONE" },
 	}
 end
 
